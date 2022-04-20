@@ -38,7 +38,7 @@ p{
     font-weight: 200;
 }
 
-/* ############################################################################ font sizing ################################################################################## */
+/* ############################################################################ Props to our 2 main components ################################################################################## */
 
 .nav{
     display: flex;
@@ -55,6 +55,8 @@ p{
     justify-content: center;
     margin-top: 50px; 
 }
+
+/* ############################################################################ Navbar search ################################################################################## */
 
 .search-card {
     position: relative;
@@ -83,20 +85,41 @@ p{
     background-color: white;
   }
 
+/* ############################################################################ First card ################################################################################## */
 
 .container{
-    height: 80%;
+    /* height: 50%; */
     width: 50%;
+    /* border: 1px solid red; */
+  }
+
+.container .card1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
-   
-    /* border: 1px solid red; */
-  }
+}
 
-  .container .card1{
+.container .card1 .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .card1 .box img{
+    width: 40%;
+    height: 40%;
+    margin-bottom: 10px;
+}
+
+.container .card1 .box .message{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* ############################################################################ Second card ################################################################################## */
+
+.container .card2{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,40 +146,18 @@ p{
     align-items: center;
 }
 
-.container .card1 .box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.container .card1 .box img{
-    width: 50%;
-    height: 50%;
-    margin-bottom: 10px;
-}
-
 .min-max-temp{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
- .container .card1 .box .message{
-     margin-top: 20px;
-     margin-bottom: 40px;
- }
 
  hr{
     opacity: 50%;
     width: 110%;
 }
 
-.container .card2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 @media (max-width: 768px) {
     .nav {
@@ -211,12 +212,31 @@ p{
 
     .container {
         height: 80%;
-        width: 90%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         /* border: 1px solid red; */
+    }
+
+    .container .card2 .boxes img{ 
+        width: 70%;
+        height: 70%;
+        margin-bottom: 15px;
+    }
+
+    .container .card2 .boxes{ 
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .card1 .box img {
+        width: 30%;
+        height: 30%;
+        margin-bottom: 10px;
     }
     
 }
