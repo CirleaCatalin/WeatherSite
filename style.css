@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%; 
+}
+
+body{
+    background: linear-gradient(to right, #184f77, #178bad, #0e2d44);
+    font-family: 'Khula', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: white;
+}
+/* ############################################################################ font sizing ################################################################################## */
+h3{
+    font-size: 8rem;
+    font-weight: 200;
+}
+h1{
+    font-size: 6.7rem;
+    font-weight: 200;
+}
+h2{
+    font-size: 3.5rem;
+    font-weight: 200;
+}
+h4{
+    font-size: 2rem;
+    margin-top: 25px;
+
+}
+p{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+/* ############################################################################ font sizing ################################################################################## */
+
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; 
+}
+
+.search-card {
+    position: relative;
+    display: flex;
+    width: 20%;
+  }
+
+.search {
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color:white;
+  }
+
+.search-icon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 14px;
+  }
+
+.search:hover, .search:focus {
+    border: 1px solid #009688;
+    background-color: white;
+  }
+
+
+.container{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+   
+    /* border: 1px solid red; */
+  }
+
+  .container .card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card2 .boxes{ 
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card2 .boxes img{ 
+    width: 50%;
+    height: 50%;
+    margin-bottom: 15px;
+}
+
+.container .card2 .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card1 .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .card1 .box img{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+.min-max-temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+ .container .card1 .box .message{
+     margin-top: 20px;
+     margin-bottom: 40px;
+ }
+
+ hr{
+    opacity: 50%;
+    width: 110%;
+}
+
+.container .card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 15%;
+    }
+    .search {
+        border-radius: 10px;
+        height: 30px;
+        /* width: 100%; */
+        padding: 2px 23px 2px 30px;
+        outline: 0;
+        background-color: white;
+    }
+
+    .search-card {
+        position: relative;
+        display: flex;
+        width: 80%;
+    }
+
+    h3{
+        font-size: 6rem;
+        font-weight: 200;
+    }
+    h1{
+        font-size: 3.6rem;
+        font-weight: 200;
+    }
+    h2{
+        font-size: 2.4rem;
+        font-weight: 200;
+    }
+    h4{
+        font-size: 1.5rem;
+        margin-top: 25px;
+    
+    }
+    p{
+        font-size: 1.9rem;
+        font-weight: 200;
+    }
+
+    hr{
+        opacity: 50%;
+        width: 80%;
+    }
+
+    .container {
+        height: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    
+}
