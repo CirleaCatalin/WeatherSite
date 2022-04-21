@@ -11,57 +11,66 @@
 <body>
     <div class="nav">
         <div class="search-card">
-            <img class="search-icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+            <form id="form" action="#">
+                <img class="search-icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
                 <input placeholder="Search"
                     type="text" 
-                    class="search">
+                    class="search"
+                    id="city">
+            </form>
+                
           </div>
+
     </div>
     <div class="wrapper">
         <div class="container">
             <div class="card1">
-                <h3>Chandigarh</h3>
+                <h3 id="city-name">Chandigarh</h3>
+                <div class="lat-long">
+                    <p id="lat"></p>
+                    <p id="long"></p>
+                </div>
+                
                 <div class="box">
-                    <img src="cloud.png" alt="cloud">
-                    <h1 class="temp-today">16°</h1>
+                    <img src="img/01d.svg" alt="cloud" id="main-icon">
+                    <h1 class="temp-today" id="city-C">16°</h1>
                     <div class="min-max-temp">
-                        <h2>6°</h2>
-                        <h2>23°</h2>
+                        <h2 id="temp-min">6°</h2>
+                        <h2 id="temp-max">23°</h2>
                     </div>
-                    <p class="message">Scattered Thundershower</p>
+                    <p class="message" id="condition">Scattered Thundershowers</p>
                 </div>
             </div>
-
-            <div class="card2 prevision">
-                <hr>
-                <div class="boxes">
-                    <div class="box mon">
-                        <h4>Mon</h4>
-                        <img src="cloud.png" alt="">
-                        <p>13/8</p>
-                    </div>
-                    <div class="box tue">
-                        <h4>Tue</h4>
-                        <img src="cloud.png" alt="">
-                        <p>14/9</p>
-                    </div>
-                    <div class="box wed">
-                        <h4>Wed</h4>
-                        <img src="cloud.png" alt="">
-                        <p>14/4</p>
-                    </div>
-                    <div class="box thu">
-                        <h4>Thu</h4>
-                        <img src="cloud.png" alt="">
-                        <p>14/9</p>
-                    </div>
-                    <div class="box fri">
-                        <h4>Fri</h4>
-                        <img src="cloud.png" alt="">
-                        <p>13/8</p>
-                    </div>
-                </div>
         </div>
+        <div class="card2 prevision">
+            <hr>
+            <div class="boxes">
+                <div class="box mon">
+                    <h4>Mon</h4>
+                    <img src="img/01d.svg" alt="cloud" id="mon">
+                    <p>13°/8°</p>
+                </div>
+                <div class="box tue">
+                    <h4>Tue</h4>
+                    <img src="img/02d.svg" alt="cloud" id="tue">
+                    <p>14°/9°</p>
+                </div>
+                <div class="box wed">
+                    <h4>Wed</h4>
+                    <img src="img/02d.svg" alt="cloud" id="wed">
+                    <p>14°/4°</p>
+                </div>
+                <div class="box thu">
+                    <h4>Thu</h4>
+                    <img src="img/02d.svg" alt="cloud" id="thu">
+                    <p>14°/9°</p>
+                </div>
+                <div class="box fri">
+                    <h4>Fri</h4>
+                    <img src="img/02d.svg" alt="cloud" id="fri">
+                    <p>13°/8°</p>
+                </div>
+            </div>
     </div>
     <script src="script.js"></script>
 </body>

@@ -14,11 +14,11 @@ body{
     font-weight: 700;
     font-size: 1.6rem;
     color: white;
-    height: 100vh;
+    height: 90vh;
 }
 /* ############################################################################ font sizing ################################################################################## */
 h3{
-    font-size: 8rem;
+    font-size: 6.5rem;
     font-weight:200;
 }
 h1{
@@ -66,7 +66,8 @@ p{
   }
   form {
     display: flex;
-    gap: 10px
+    gap: 10px;
+    width: 60vw;
 }
 .search {
     border-radius: 10px;
@@ -119,6 +120,14 @@ input[type="submit"] {
     align-items: center;
 }
 
+.container .card1 .lat-long{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
 .container .card1 .box{
     display: flex;
     flex-direction: column;
@@ -131,6 +140,12 @@ input[type="submit"] {
     margin-bottom: 10px;
 }
 
+.container .card1 .box .fetched {
+    width: 250px;
+    margin-bottom: -30px;
+    margin-top: -20px;
+}
+
 .container .card1 .box .message{
     margin-top: 20px;
     margin-bottom: 35px;
@@ -138,31 +153,32 @@ input[type="submit"] {
 
 /* ############################################################################ Second card ################################################################################## */
 
-.container .card2{
+.card2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 97vw;
 }
-
-.container .card2 .boxes{ 
+.card2 .boxes {
     display: flex;
     gap: 50px;
     align-items: center;
     justify-content: center;
+    width: 80%;
 }
-
-.container .card2 .boxes img{ 
+.card2 .boxes img{ 
     width: 65%;
     height: 65%;
     margin-bottom: 15px;
 }
 
-.container .card2 .box{
+.card2 .box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 12%;
 }
 
 .min-max-temp{
@@ -174,7 +190,7 @@ input[type="submit"] {
 
  hr{
     opacity: 50%;
-    width: 110%;
+    width: 60%;
 }
 
 .hidden{
@@ -204,7 +220,7 @@ input[type="submit"] {
     }
 
     h3{
-        font-size: 6rem;
+        font-size: 4rem;
         font-weight: 200;
     }
     h1{
@@ -227,7 +243,7 @@ input[type="submit"] {
 
     hr{
         opacity: 50%;
-        width: 80%;
+        width: 60%;
     }
 
     .container {
@@ -246,13 +262,22 @@ input[type="submit"] {
         margin-bottom: 15px;
     }
 
-    .container .card2 .boxes{ 
+    .card2 .boxes {
         display: flex;
         gap: 8px;
         align-items: center;
         justify-content: center;
+        width: 100%;
     }
 
+    .card2 .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 18%;
+    }
+    
     .container .card1 .box img {
         width: 30%;
         height: 30%;
@@ -266,6 +291,11 @@ input[type="submit"] {
     }
 
     hr {
-        width: 100%;
+        width: 70%;
+    }
+    .container .card1 .box .fetched {
+        width: 146px;
+        margin-bottom: -20px;
+        margin-top: -10px;
     }
 }
