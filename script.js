@@ -7,6 +7,7 @@ const pC = document.getElementById("city-C");
 const images = document.querySelectorAll('img');
 const tempMin = document.getElementById('temp-min');
 const tempMax = document.getElementById('temp-max');
+const mainIcon = document.getElementById('main-icon');
 
 submitCity.addEventListener("submit",()=>{
   if(searchName.value!==""){
