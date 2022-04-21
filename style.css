@@ -64,7 +64,10 @@ p{
     display: flex;
     width: 20%;
   }
-
+  form {
+    display: flex;
+    gap: 10px
+}
 .search {
     border-radius: 10px;
     height: 30px;
@@ -73,17 +76,32 @@ p{
     background-color:transparent;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-  input[type="text"] { border: none }
-.search-icon {
+  .search-icon {
     position: absolute;
     top: 8px;
     left: 8px;
     width: 14px;
   }
+  ::placeholder {
+    color: white;
+    opacity: 0.6; 
+  }
+
+  input:hover::-webkit-input-placeholder {
+    color: black;
+}
+input[type="text"] { border: none }
+input[type="submit"] { 
+    border-radius: 10px; 
+    width: 3px;
+    font-size: 15px;
+
+}
 
 .search:hover, .search:focus {
     border: 1px solid #009688;
     background-color: white;
+
   }
 
 /* ############################################################################ First card ################################################################################## */
@@ -159,6 +177,9 @@ p{
     width: 110%;
 }
 
+.hidden{
+    display: none;
+}
 
 @media (max-width: 768px) {
     .nav {
@@ -171,9 +192,15 @@ p{
     }
 
     .search-card {
-        position: relative;
+        justify-content: center;
         display: flex;
         width: 80%;
+    }
+    .search-icon{
+        display: none;
+    }
+    .search{
+        padding: 2px 23px 2px 13px;
     }
 
     h3{
