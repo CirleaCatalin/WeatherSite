@@ -1,301 +1,302 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    font-size: 62.5%; 
+:root {
+  font-size: 62.5%;
 }
 
-body{
-    background: linear-gradient(to right, #184f77, #178bad, #0e2d44);
-    font-family: 'Khula', sans-serif;
-    font-weight: 700;
-    font-size: 1.6rem;
-    color: white;
-    height: 90vh;
+body {
+  background-image: url("bckg/2.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  font-family: "Khula", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: white;
+  height: 100vh;
 }
 /* ############################################################################ font sizing ################################################################################## */
-h3{
-    font-size: 6.5rem;
-    font-weight:200;
+h3 {
+  font-size: 6.5rem;
+  font-weight: 200;
 }
-h1{
-    font-size: 6.7rem;
-    font-weight: 200;
+h1 {
+  font-size: 6.7rem;
+  font-weight: 200;
 }
-h2{
-    font-size: 3.5rem;
-    font-weight: 200;
+h2 {
+  font-size: 3.5rem;
+  font-weight: 200;
 }
-h4{
-    font-size: 2rem;
-    margin-top: 25px;
-
+h4 {
+  font-size: 2rem;
+  margin-top: 25px;
 }
-p{
-    font-size: 2.3rem;
-    font-weight: 200;
+p {
+  font-size: 2.3rem;
+  font-weight: 200;
 }
-
 
 /* ############################################################################ Props to our 2 main components ################################################################################## */
 
-.nav{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 30px;
-    height: 10%;
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30px;
+  height: 10%;
 }
 
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ############################################################################ Navbar search ################################################################################## */
 
 .search-card {
-    position: relative;
-    display: flex;
-    width: 20%;
-  }
-  form {
-    display: flex;
-    gap: 10px;
-    width: 60vw;
+  position: relative;
+  display: flex;
+  width: 20%;
+}
+form {
+  display: flex;
+  gap: 10px;
+  width: 60vw;
 }
 .search {
-    border-radius: 10px;
-    height: 30px;
-    width: 100%;
-    padding: 2px 23px 2px 30px;
-    background-color:transparent;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  .search-icon {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    width: 14px;
-  }
-  ::placeholder {
-    color: white;
-    opacity: 0.6; 
-  }
-
-  input:hover::-webkit-input-placeholder {
-    color: black;
+  border-radius: 10px;
+  height: 30px;
+  width: 100%;
+  padding: 2px 23px 2px 30px;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-input[type="text"] { border: none }
-input[type="submit"] { 
-    border-radius: 10px; 
-    width: 3px;
-    font-size: 15px;
-
+.search-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 14px;
 }
 
-.search:hover, .search:focus {
-    border: 1px solid #009688;
-    background-color: white;
+input:hover::-webkit-input-placeholder {
+  color: black;
+}
+input[type="text"] {
+  border: none;
+}
+input[type="submit"] {
+  border-radius: 10px;
+  width: 3px;
+  font-size: 15px;
+}
 
-  }
+.search:hover,
+.search:focus {
+  border: 1px solid #009688;
+  background-color: white;
+}
 
 /* ############################################################################ First card ################################################################################## */
 
-.container{
-    /* height: 50%; */
-    width: 50%;
-    /* border: 1px solid red; */
-  }
-
-.container .card1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container {
+  /* height: 50%; */
+  width: 50%;
+  /* border: 1px solid red; */
 }
 
-.container .card1 .lat-long{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-
+.container .card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container .card1 .box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container .card1 .lat-long {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
-.container .card1 .box img{
-    width: 40%;
-    height: 40%;
-    margin-bottom: 10px;
+
+.container .card1 .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .card1 .box img {
+  width: 40%;
+  height: 40%;
+  margin-bottom: 10px;
 }
 
 .container .card1 .box .fetched {
-    width: 250px;
-    margin-bottom: -30px;
-    margin-top: -20px;
+  width: 250px;
+  margin-bottom: -30px;
+  margin-top: -20px;
 }
 
-.container .card1 .box .message{
-    margin-top: 20px;
-    margin-bottom: 35px;
+.container .card1 .box .not-found {
+  width: 110px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.container .card1 .box .message {
+  margin-top: 20px;
+  margin-bottom: 35px;
 }
 
 /* ############################################################################ Second card ################################################################################## */
 
-.card2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 97vw;
+.card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 97vw;
 }
 .card2 .boxes {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
 }
-.card2 .boxes img{ 
-    width: 65%;
-    height: 65%;
-    margin-bottom: 15px;
-}
-
-.card2 .box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 12%;
+.card2 .boxes img {
+  width: 65%;
+  height: 65%;
+  margin-bottom: 15px;
 }
 
-.min-max-temp{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+.card2 .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
 }
 
- hr{
-    opacity: 50%;
-    width: 60%;
+.min-max-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
-.hidden{
-    display: none;
+hr {
+  opacity: 50%;
+  width: 60%;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 768px) {
-    .nav {
-        margin-left: 20px;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 15%;
-    }
+  .nav {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15%;
+  }
 
-    .search-card {
-        justify-content: center;
-        display: flex;
-        width: 80%;
-    }
-    .search-icon{
-        display: none;
-    }
-    .search{
-        padding: 2px 23px 2px 13px;
-    }
+  .search-card {
+    justify-content: center;
+    display: flex;
+    width: 80%;
+  }
+  .search-icon {
+    display: none;
+  }
+  .search {
+    padding: 2px 23px 2px 13px;
+  }
 
-    h3{
-        font-size: 4rem;
-        font-weight: 200;
-    }
-    h1{
-        font-size: 3.6rem;
-        font-weight: 200;
-    }
-    h2{
-        font-size: 2.4rem;
-        font-weight: 200;
-    }
-    h4{
-        font-size: 1.5rem;
-        margin-top: 25px;
-    
-    }
-    p{
-        font-size: 1.8rem;
-        font-weight: 200;
-    }
+  h3 {
+    font-size: 4rem;
+    font-weight: 200;
+  }
+  h1 {
+    font-size: 3.6rem;
+    font-weight: 200;
+  }
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 200;
+  }
+  h4 {
+    font-size: 1.5rem;
+    margin-top: 25px;
+  }
+  p {
+    font-size: 1.8rem;
+    font-weight: 200;
+  }
 
-    hr{
-        opacity: 50%;
-        width: 60%;
-    }
+  hr {
+    opacity: 50%;
+    width: 60%;
+  }
 
-    .container {
-        height: 80%;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* border: 1px solid red; */
-    }
+  .container {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
 
-    .container .card2 .boxes img{ 
-        width: 70%;
-        height: 70%;
-        margin-bottom: 15px;
-    }
+  .container .card2 .boxes img {
+    width: 70%;
+    height: 70%;
+    margin-bottom: 15px;
+  }
 
-    .card2 .boxes {
-        display: flex;
-        gap: 8px;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
+  .card2 .boxes {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 
-    .card2 .box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 18%;
-    }
-    
-    .container .card1 .box img {
-        width: 30%;
-        height: 30%;
-        margin-bottom: 10px;
-    }
+  .card2 .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+  }
 
-    .container .card1 .box .message {
-        margin-top: 20px;
-        margin-bottom: 24px;
-        font-size: 2.1rem;
-    }
+  .container .card1 .box img {
+    width: 30%;
+    height: 30%;
+    margin-bottom: 10px;
+  }
 
-    hr {
-        width: 70%;
-    }
-    .container .card1 .box .fetched {
-        width: 146px;
-        margin-bottom: -20px;
-        margin-top: -10px;
-    }
+  .container .card1 .box .message {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-size: 2.1rem;
+  }
+
+  hr {
+    width: 70%;
+  }
+  .container .card1 .box .fetched {
+    width: 146px;
+    margin-bottom: -20px;
+    margin-top: -10px;
+  }
 }
