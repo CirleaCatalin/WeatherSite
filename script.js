@@ -34,7 +34,7 @@ submitCity.addEventListener("submit", () => {
 async function getCoord(city) {
   try {
     const response = await fetch(
-      "http://api.openweathermap.org/geo/1.0/direct?q=" +
+      "https://api.openweathermap.org/geo/1.0/direct?q=" +
         city +
         "&appid=" +
         API_Key,
