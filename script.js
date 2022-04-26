@@ -9,7 +9,6 @@ const tempMin = document.getElementById("temp-min");
 const tempMax = document.getElementById("temp-max");
 const mainIcon = document.getElementById("main-icon");
 const card2 = document.getElementsByClassName("card2");
-
 // card 2 image selector
 const mon = document.getElementById("mon");
 const tue = document.getElementById("tue");
