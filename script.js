@@ -118,4 +118,17 @@ async function getWeather(lat, long) {
   }
 }
 
+
+// get time then display an image background based on day or night
+
+var currentTime = new Date().getHours();
+console.log (currentTime);
+if(currentTime>18){
+  document.body.style.backgroundImage = "url('bckg/2.jpg')";
+}
+else{
+  document.body.style.backgroundImage = "url('bckg/3.jpg')";
+}
+
 getCoord("turda");
+console.log("Confirmation");
